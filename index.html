@@ -194,6 +194,7 @@
     height: 26px;
     left: 630px;
     top: 142px;
+    cursor: pointer;
 }
 </style>
 
@@ -434,10 +435,13 @@
         
     </div>
 </body>
+
 <script>
     const facebook = document.getElementById('facebook')
     const instagram = document.getElementById('instagram')
     const linkedin = document.getElementById('linkedin')
+    const site = document.getElementById('logo')
+
 
     facebook.addEventListener('click', (e) => {
         window.open('https://www.facebook.com/InovandoSoftware', '_blank')
@@ -450,6 +454,11 @@
     linkedin.addEventListener('click', (e) => {
         window.open('https://www.linkedin.com/company/inovandosoftware/mycompany/', '_blank')
     })
+
+    site.addEventListener('click', (e) => {
+        window.open('https://inovan.do/', '_blank')
+    })
+
 </script>
 
 </html>
