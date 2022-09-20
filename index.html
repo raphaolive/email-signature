@@ -20,13 +20,12 @@
         font-family: 'Montserrat';
         color: #0E4664;
     }
-  
+
 
     .container {
         position: relative;
         margin: auto;
-        max-width: 1000px;
-        height: 600px;
+        max-width: 900px;
         background-color: rgba(255, 255, 255, 0.682);
         border-radius: 10px;
         box-shadow: 2px 8px 14px 0px #00000030;
@@ -38,14 +37,6 @@
         background-color: #f3f3f3;
         padding: 10px;
         border-radius: 10px 10px 0px 0px;
-    }
-
-    .body{
-        position: absolute;
-        width: 100%;
-        height: 500px;
-        overflow-x: hidden;
-        overflow-y: scroll hidden;
     }
 
     h1 {
@@ -61,15 +52,24 @@
 
     }
 
+    .body {
+        position: relative;
+        width: 100%;
+        max-height: 500px;
+        overflow-x: hidden;
+        overflow-y: scroll hidden;
+    }
+
     ul {
         list-style-type: none;
         margin: 14px;
         padding: 0;
     }
-    li{
+
+    li {
         margin: 10px 0px;
     }
-    
+
     .personBox {
         display: flex;
         flex-direction: row;
@@ -80,12 +80,12 @@
         background-color: #F6F6F6;
         padding: 10px;
         border-radius: 10px;
-        transition: 0.5s;
     }
-    
-    .personBox:hover{
-        transition: 0.5s;
-        background-color: rgb(233, 239, 242);
+
+    .nameAndLinks {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
     }
 
     .personBox>p {
@@ -98,9 +98,26 @@
         margin-right: 30px;
     }
 
+
     a {
         text-decoration: none;
+        color: #818181;
+        transition: 0.5s;
     }
+
+    a:hover {
+        transition: 0.5s;
+        color: #0E4664;
+    }
+
+    @media (min-width: 280px) {
+        body{
+            margin: 100px 10px;
+            font-size: small;
+        }
+
+    }
+
 </style>
 
 <body>
@@ -212,116 +229,187 @@
         <div class="body">
             <ul>
                 <li>
-                    <a href="./workers_signature/andre.html">
-                        <div class="personBox">
-                            <p>Andre Atunes</p>
-                            <img src="./avatars/andre.png" alt="andre-png" class="profile">
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Andre Atunes &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/andre.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/andre_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
                         </div>
-                    </a>
+                        <img src="./avatars/andre.png" alt="andre-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/ewerton.html">
-                        <div class="personBox">
-                            <p>Ewerton Lourenço</p>
-                            <img src="./avatars/ewerton.png" alt="ewerton-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Ewerton Lourenço &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/ewerton.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/ewerton_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/ewerton.png" alt="ewerton-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/jean.html">
-                        <div class="personBox">
-                            <p>Jean Alves</p>
-                            <img src="./avatars/jean.png" alt="jean-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Jean Alves &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/jean.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/jean_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/jean.png" alt="jean-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/joao.html">
-                        <div class="personBox">
-                            <p>João Rodrigues</p>
-                            <img src="./avatars/joao.png" alt="joao-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>João Rodrigues &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/joao.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/joao_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/joao.png" alt="joao-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/jose.html">
-                        <div class="personBox">
-                            <p>José Vilafranca</p>
-                            <img src="./avatars/jose.png" alt="jose-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>José Vilafranca &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/jose.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/jose_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/jose.png" alt="jose-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/lucas.html">
-                        <div class="personBox">
-                            <p>Lucas Storch</p>
-                            <img src="./avatars/lucas.png" alt="lucas-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Lucas Storch &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/lucas.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/lucas_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/lucas.png" alt="lucas-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/maunriney.html">
-                        <div class="personBox">
-                            <p>Mauriney da Costa</p>
-                            <img src="./avatars/mauriney.png" alt="mauriney-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Mauriney da Costa &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/maunriney.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/maunriney_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/mauriney.png" alt="mauriney-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/mauro.html">
-                        <div class="personBox">
-                            <p>Mauro Grabowski</p>
-                            <img src="./avatars/mauriney.png" alt="mauro-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Mauro Grabowski &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/mauro.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/mauro_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/mauro.png" alt="mauro-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/rafael_alves.html">
-                        <div class="personBox">
-                            <p>Rafael Alves</p>
-                            <img src="./avatars/rafael.png" alt="rafael-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Rafael Alves &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/rafael_alves.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/rafael_alves_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/rafael.png" alt="rafael-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/raphael_oliveira.html">
-                        <div class="personBox">
-                            <p>Raphael Oliveira</p>
-                            <img src="./avatars/teacher.png" alt="raphael-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Raphael De Oliveira &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/raphael_oliveira.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/raphael_oliveira_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/teacher.png" alt="raphael-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/renato.html">
-                        <div class="personBox">
-                            <p>Renato Molina</p>
-                            <img src="./avatars/renato.png" alt="renato-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Renato Molina &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/renato.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/renato_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/renato.png" alt="renato-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/ricardo.html">
-                        <div class="personBox">
-                            <p>Ricardo Latoch</p>
-                            <img src="./avatars/ricardo.png" alt="ricardo-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Ricardo Latoch &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/ricardo.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/ricardo_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/ricardo.png" alt="ricardo-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/robert.html">
-                        <div class="personBox">
-                            <p>Robert Bialli</p>
-                            <img src="./avatars/robert.png" alt="robert-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Robert Bialli &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/robert.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/robert_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/robert.png" alt="robert-png" class="profile">
+                    </div>
                 </li>
                 <li>
-                    <a href="./workers_signature/tiago.html">
-                        <div class="personBox">
-                            <p>Tiago Alves</p>
-                            <img src="./avatars/tiago.png" alt="tiago-png" class="profile">
-                        </div>
-                    </a>
+                    <div class="personBox">
+                        <div class="nameAndLinks">
+                            <p>Tiago Alves &nbsp;</p>
+                            <a target="_blank" href="./workers_signature/tiago.html">
+                                <p>|&nbsp;com foto&nbsp;</p>
+                            </a>
+                            <a target="_blank" href="./workers-sig-no-photo/tiago_noPhoto.html">
+                                <p>|&nbsp;sem foto&nbsp;</p>
+                            </a>
+                        </div> <img src="./avatars/tiago.png" alt="tiago-png" class="profile">
+                    </div>
                 </li>
             </ul>
         </div>
