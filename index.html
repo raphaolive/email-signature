@@ -14,8 +14,13 @@
 </head>
 
 <style>
+
+    html{
+        font-size: 62.5%;
+    }
+
     body {
-        margin: 100px;
+        margin-top: 20vh;
         background: linear-gradient(90deg, #90c0d5, #128FC6);
         font-family: 'Montserrat';
         color: #0E4664;
@@ -25,7 +30,8 @@
     .container {
         position: relative;
         margin: auto;
-        max-width: 900px;
+        width: 80vw;
+        height: 60vh;
         background-color: rgba(255, 255, 255, 0.682);
         border-radius: 10px;
         box-shadow: 2px 8px 14px 0px #00000030;
@@ -41,7 +47,7 @@
 
     h1 {
         position: relative;
-        font-size: 1.5em;
+        font-size: 2.0rem;
         margin-left: 50px;
     }
 
@@ -53,11 +59,11 @@
     }
 
     .body {
-        position: relative;
+        position: absolute;
         width: 100%;
-        max-height: 350px;
+        height: 85%;
+        overflow: scroll;
         overflow-x: hidden;
-        overflow-y: scroll hidden;
     }
 
     ul {
@@ -68,6 +74,7 @@
 
     li {
         margin: 10px 0px;
+        font-size: 1.5rem;
     }
 
     .personBox {
@@ -88,7 +95,7 @@
         flex-direction: row;
     }
 
-    .personBox>p {
+    .personBox  > p {
         margin-left: 40px;
     }
 
@@ -110,12 +117,59 @@
         color: #0E4664;
     }
 
-    @media (min-width: 280px) {
-        body{
-            margin: 100px 10px;
-            font-size: small;
+    @media (max-width: 700px) {
+        html{
+            font-size: 50%;
         }
+        #logo{
+            top: 17px
+        }
+    }
 
+    @media (max-width: 600px) {
+        h1{
+            margin-left: 10px;
+        }
+        #logo{
+            position: absolute;
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 510px) {
+        html{
+            font-size: 45%;
+        }
+        .header{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            order: 1;
+            margin-left: 0;
+        }
+        #logo{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            bottom: -5px;
+        }
+        .body{
+            height: 80%;
+        }
+    }
+
+    @media (max-width: 390px) {
+        h1{
+            font-size: 1.5rem;
+        }
+        .profile{
+            margin: 0;
+        }
+        .nameAndLinks{
+            margin: 0px 10px;
+        }
     }
 
 </style>
